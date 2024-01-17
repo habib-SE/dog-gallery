@@ -34,12 +34,12 @@ const DogGallery = () => {
 
   return (
     <div>
-      <h2>Dog Gallery</h2>
+      <h2 className=' text-center text-black font-bold text-4xl'>Dog Gallery</h2>
       <div className="mb-4">
-        <label htmlFor="breedSelect">Select a breed:</label>
+        <label htmlFor="breedSelect" className=' text-2xl text-slate-400'>Select a breed:</label>
         <select
           id="breedSelect"
-          className="ml-2 p-2"
+          className="ml-2 px-10 border bg-slate-400 p-2"
           onChange={(e) => setSelectedBreed(e.target.value)}
           value={selectedBreed}
         >
